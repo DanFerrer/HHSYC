@@ -1,0 +1,73 @@
+
+#masthead h1 {
+    font-size: 30px;
+    line-height: 1;
+    padding-top:20px;
+}
+
+#masthead .well {
+    margin-top:8%;
+}
+
+@media screen and (min-width: 768px) {
+    #masthead h1 {
+        font-size: 50px;
+    }
+}
+
+.affix-top,.affix{
+    position: static;
+}
+
+.about-sidebar > ul > li > a {
+}
+
+.about-sidebar > ul > li > a:hover {
+    color: #ff6600;
+    background-color: #eee;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+@media (min-width: 979px) {
+    #sidebar.affix-top {
+        margin-top:30px;
+        width:228px;
+    }
+
+    #sidebar.affix {
+        position: fixed;
+        top:70px;
+        width:228px;
+    }
+}
+
+#sidebar li.active {
+    border: 0 #ff6600 solid;
+    border-right-width:4px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+div.our-purpose ul li {
+    margin-bottom: 15px;
+}
+
+.our-purpose {
+    text-align: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px ) {
+
+    .our-purpose {
+        text-align: left;
+    }
+}
+
+img.team-image {
+    border-radius: 50%
+}

@@ -1,0 +1,105 @@
+body {
+    padding-top: 50px;
+}
+
+.active-tab {
+    border-bottom: solid #ff6600 5px;
+}
+
+#header {
+    background: #222;
+    text-transform: uppercase;
+    background-image: -moz-linear-gradient(top, #222222, #111111);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
+    background-image: -webkit-linear-gradient(top, #222222, #111111);
+    background-image: -o-linear-gradient(top, #222222, #111111);
+    background-image: linear-gradient(to bottom, #222222, #111111);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
+    border-color: #252525;
+}
+
+#search-bar {
+    background: #222;
+    padding-top: 15px;
+    background-image: -moz-linear-gradient(top, #222222, #111111);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
+    background-image: -webkit-linear-gradient(top, #222222, #111111);
+    background-image: -o-linear-gradient(top, #222222, #111111);
+    background-image: linear-gradient(to bottom, #222222, #111111);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
+    border-color: #252525;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.btn-orange {
+    color: #ffffff;
+    background-color: #ff6600;
+    border-color: #eea236;
+}
+
+@media screen and (min-width: 32px) and (max-width: 767px) {
+
+    div > h1.page-header {
+        text-align: center;
+    }
+}
+
+small {
+    color: #ff6600;
+}
+
+#header .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: #ff6600;
+    background-color: transparent;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, .6);
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    .active-tab {
+        border-bottom: none;
+        background-color: #ff6600 ;
+    }
+
+    .navbar-brand {
+        text-align: center;
+    }
+
+    div.header {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        font-size: 1.5em;
+    }
+
+    .navbar-inverse .navbar-nav > li.active-tab > a:hover,
+    .navbar-inverse .navbar-nav > li.active-tab > a:focus {
+        color: #ffffff;
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+        -webkit-transition: color 0.0s ease;
+        -moz-transition: color 0.0s ease;
+        -o-transition: color 0.0s ease;
+        transition: color 0.0s ease;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .navbar-collapse .nav > .divider-vertical {
+        display: none;
+    }
+}
+
+
+

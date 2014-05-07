@@ -1,0 +1,36 @@
+footer#footer {
+    color: #fff;
+    background: #222;
+    text-transform: uppercase;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    background-image: -moz-linear-gradient(top, #222222, #111111);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
+    background-image: -webkit-linear-gradient(top, #222222, #111111);
+    background-image: -o-linear-gradient(top, #222222, #111111);
+    background-image: linear-gradient(to bottom, #222222, #111111);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
+    border-color: #252525;
+}
+
+.footer-brand {
+    font-size: 1em;
+    text-shadow: 0 0 10px #ff6600;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.social-icons a.youtube:hover{
+    color: red;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 3px solid #ff6600;
+}
