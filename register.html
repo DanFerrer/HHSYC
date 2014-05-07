@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="vendor/font-awesome-4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="header/css/navbar.css">
     <link rel="stylesheet" href="footer/css/footer.css">
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato' type='text/css'>
+    <link rel="stylesheet" href="vendor/chosen/chosen.css">
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -80,59 +80,107 @@
 
 <div class="container">
     <h1 class="page-header">HHSYC Program Registration <small>General Information</small></h1>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="form-group">
-                <label>First Name</label>
-                <input type="text" name="first_name" class="form-control" id="first_name">
+    <form method="POST" action="pjp/form_proccessor.php">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>First Name</label>
+                    <input type="text" name="first_name" class="form-control" id="first_name">
+                </div>
+                <div class="form-group">
+                    <label>Last Name</label>
+                    <input type="text" name="last_name" class="form-control" id="last_name">
+                </div>
+                <div class="form-group">
+                    <label>School/Work</label>
+                    <input type="text" name="school_job" class="form-control" id="school_job">
+                </div>
+                <label class="radio-inline">
+                    <input type="radio" name="gender" id="male" value="male">
+                    Male
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="gender" id="female" value="female">
+                    Female
+                </label>
+                <div class="form-group">
+                    <label>Age</label>
+                    <input type="number" name="age" class="form-control" id="age">
+                </div>
+                <div class="form-group">
+                    <label>City</label>
+                    <input type="text" name="city" class="form-control" id="city">
+                </div>
+                <div class="form-group">
+                    <label>State</label>
+                    <input type="text" name="state" class="form-control" id="state">
+                </div>
+                <div class="form-group">
+                    <label>Zip</label>
+                    <input type="number" name="xip" class="form-control" id="zip">
+                </div>
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input type="tel" name="phone" class="form-control" id="phone">
+                </div>
+                <div class="form-group">
+                    <label>Name of Public Housing Development</label>
+                    <input type="text" name="housing_development" class="form-control" id="housing_development">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" class="form-control" id="email">
+                </div>
             </div>
-            <div class="form-group">
-                <label>Last Name</label>
-                <input type="text" name="last_name" class="form-control" id="last_name">
+            <div class="col-md-6">
+                <h3>Select the activity you wish to join from the dropdown <br />
+                    <small>You may select multiple programs one at a time</small>
+                </h3>
+                <select class="program-select" multiple>
+                    <option value="Read 2 Succeed Through Hip-Hop and Sports Project">Read 2 Succeed Through Hip-Hop &amp; Sports Project</option>
+                    <option value="Hip-Hop Against Gun and Gang Violence Project">Hip-Hop Against Gun &amp; Gang Violence Project</option>
+                    <option value="Hip-Hop Economic Empowerment Program (HEEP)">Hip-Hop Economic Empowerment Program (HEEP)</option>
+                    <option value="Hip-Hop Against Drugs (HAD)">Hip-Hop Against Drugs (HAD)</option>
+                    <option value="Time 2 Shine">Time 2 Shine</option>
+                    <option value="Rap 2 Bridge the Gap">Rap 2 Bridge the Gap</option>
+                    <option value="Hip-Hop Entertainment Business Program">Hip-Hop Entertainment Business Program</option>
+                    <option value="Hip-Hop Goes to Hollywood Project">Hip-Hop Goes to Hollywood Project</option>
+                    <option value="Hip-Hop 4 Better Health Program">Hip-Hop 4 Better Health Program</option>
+                    <option value="It's Dope To Vote">It's Dope To Vote</option>
+                    <option value="Sandy Rebuilding AID Project (S-RAP)">Sandy Rebuilding AID Project (S-RAP)</option>
+                    <option value="Artists, Actors, Athletes, Authors, and Activists Against AIDS (A-TEAM)">Artists, Actors, Athletes, Authors, &amp; Activists Against AIDS (A-TEAM)</option>
+                    <option value="Community Ambassadors 4 Peace">Community Ambassadors 4 Peace</option>
+                    <option value="Character Enlightenment Program">Character Enlightenment Program</option>
+                    <option value="Jobs">Jobs</option>
+                    <option value="Internships">Internships</option>
+                    <option value="Entrepreneurship Opportunities">Entrepreneurship Opportunities</option>
+                    <option value="Daymond John Academy Scholarship">Daymond John Academy Scholarship</option>
+                    <option value="Shark-A-Nomics 101">Shark-A-Nomics 101</option>
+                    <option value="Street Team Membership">Street Team Membership</option>
+                    <option value='Hip-Hop "Power Poll" Registration'>Hip-Hop "Power Poll" Registration</option>
+                    <option value="Hip-Hop Summit Youth Council General Membership Registration">Hip-Hop Summit Youth Council General Membership Registration</option>
+                    <option value="Community Legal Assistance Program (CLAP)">Community Legal Assistance Program (CLAP)</option>
+                    <option value="Hip-Hop &amp; Politics Project">Hip-Hop &amp; Politics Project</option>
+                    <option value="Hip-Hop 4 Better Housing Program">Hip-Hop 4 Better Housing Program</option>
+                    <option value="Foreclosure Assistance Network (FAN)">Foreclosure Assistance Network (FAN)</option>
+                    <option value="Hip-Hop Supports the MDGs">Hip-Hop Supports the MDGs</option>
+                    <option value="Operation FLEET">Operation FLEET</option>
+                </select>
+                <div class="btn-group inline text-center">
+                    <button role="button" class="btn btn-orange select-all">Select All</button>
+                    <button role="button" class="btn btn-default deselect-all">Deselect All</button>
+                </div>
+                <input type="hidden" name="_thankyou_email" value="email" />
+                <input type="hidden" name="_from" value="info@hhsyc.org" />
+                <input type="hidden" name="_subject" value="Thanks for signing up" />
+                <input type="hidden" name="_thankyou_message" value="Hi {first_name}!\n\nThanks for signing up, we'll get in touch with you soon.\n\n-Staff" />
+                <input type="hidden" name="_recipient[]" value="hiphopbooks@yahoo.com" />
+                <input type="hidden" name="_recipient[]" value="johncopen@gmail.com" />
             </div>
-            <div class="form-group">
-                <label>School/Work</label>
-                <input type="text" name="school_job" class="form-control" id="school_job">
-            </div>
-            <label class="radio-inline">
-                <input type="radio" name="gender" id="male" value="male">
-                Male
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="gender" id="female" value="female">
-                Female
-            </label>
-            <div class="form-group">
-                <label>Age</label>
-                <input type="number" name="age" class="form-control" id="age">
-            </div>
-            <div class="form-group">
-                <label>City</label>
-                <input type="text" name="city" class="form-control" id="city">
-            </div>
-            <div class="form-group">
-                <label>State</label>
-                <input type="text" name="state" class="form-control" id="state">
-            </div>
-            <div class="form-group">
-                <label>Zip</label>
-                <input type="number" name="xip" class="form-control" id="zip">
-            </div>
-            <div class="form-group">
-                <label>Phone</label>
-                <input type="tel" name="phone" class="form-control" id="phone">
-            </div>
-            <div class="form-group">
-                <label>Name of Public Housing Development</label>
-                <input type="text" name="housing_development" class="form-control" id="housing_development">
-            </div>
-            <div class="form-group">
-                <label>Email</label>
-                <input type="email" name="email" class="form-control" id="email">
-            </div>
-
         </div>
-    </div>
+        <br/>
+        <button type="submit" class=" btn btn-large btn-orange">Submit Form</button>
+    </form>
 </div>
 
 <footer id="footer">
@@ -150,11 +198,33 @@
     </div>
 </footer>
 
-
-
 <!--Javascript-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.js"></script>
+<script src="vendor/chosen/chosen.jquery.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".program-select").chosen(
+            {
+                no_results_text: "Oops, nothing found for ",
+                disable_search_threshold: 1,
+                placeholder_text_multiple: "Select some programs",
+                width: "60%"
+
+            }
+        ).trigger("chosen:updated");
+
+        $('.select-all').click(function(){
+            $('option').prop('selected', true);
+            $('.program-select').trigger('chosen:updated');
+        });
+
+        $('.deselect-all').click(function(){
+            $('option').prop('selected', false);
+            $('.program-select').trigger('chosen:updated');
+        });
+    });
+</script>
 
 </body>
 </html>
