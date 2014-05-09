@@ -45,11 +45,11 @@
         </div>
         <div class="collapse navbar-collapse" id="hhsyc-navbar">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="#">Programs</a></li>
+                <li><a href="programs.html">Programs</a></li>
                 <li><a href="news.html">News</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li class="active-tab"><a href="register.html">Register</a></li>
                 <li><a href="donate.html">Donate</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -81,7 +81,7 @@
 
 <div class="container">
     <h1 class="page-header">HHSYC Program Registration <small>General Information</small></h1>
-    <form method="POST" action="php/form_proccessor.php">
+    <form method="POST" action="programs/php/form_processor.php">
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
@@ -168,9 +168,11 @@
                     <option value="Operation FLEET">Operation FLEET</option>
                 </select>
                 <div class="btn-group inline text-center">
-                    <button role="button" class="btn btn-orange select-all">Select All</button>
-                    <button role="button" class="btn btn-default deselect-all">Deselect All</button>
+                    <span class="btn btn-orange select-all">Select All</span>
+                    <span class="btn btn-default deselect-all">Deselect All</span>
                 </div>
+
+                <input type="hidden" name="_redirect" value="index.html">
                 <input type="hidden" name="_thankyou_email" value="email" />
                 <input type="hidden" name="_from" value="info@hhsyc.org" />
                 <input type="hidden" name="_subject" value="Thanks for signing up" />
@@ -186,12 +188,12 @@
 
 <footer id="footer">
     <div class="container">
-        <h4 class="footer-brand pull-left">Hip Hop Summit Youth Council</h4>
+        <h4 class="footer-brand pull-left">Hip-Hop Summit Youth Council</h4>
         <span class="social-icons pull-right">
-            <a href="https://www.youtube.com/hhsyc" target="_blank" class="youtube" title="HHSYC Youtube"><i class=" fa fa-3x fa-youtube"></i></a>
-            <a class="twitter"><i class="fa fa-3x fa-twitter"></i></a>
-            <a class="twitter"><i class="fa fa-3x fa-facebook"></i></a>
-            <a class="twitter"><i class="fa fa-3x fa-instagram"></i></a>
+            <a href="https://www.youtube.com/hhsyc" target="_blank" class="youtube" title="HHSYC Youtube"><i class=" fa fa-2x fa-youtube"></i></a>
+            <a href="https://twitter.com/HHSYC" target="_blank" class="twitter" title="HHSYC Twitter"><i class="fa fa-2x fa-twitter"></i></a>
+            <a href="https://www.facebook.com/hhsyc?fref=ts" target="blank" class="facebook"><i class="fa fa-2x fa-facebook"></i></a>
+            <a class="instagram"><i class="fa fa-2x fa-instagram"></i></a>
         </span>
         <div class="clearfix"></div>
         <hr>

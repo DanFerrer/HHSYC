@@ -1,7 +1,6 @@
 jQuery(document).ready(function($){
 
-    // hide messages
-    $("#sent-form-msg").hide();
+    'use strict';
 
     // on submit...
     $("#contactForm #submit").click(function() {
@@ -19,7 +18,6 @@ jQuery(document).ready(function($){
         // email
         var email = $("input#email").val();
         var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-
         if(email == ""){
            alert("Please include your Email Address ");
             $("input#email").focus();
@@ -42,10 +40,11 @@ jQuery(document).ready(function($){
 
         // comments
         var comments = $("#comments").val();
-            if(comments.length == 0) {
-                confirm("Looks like your message is blank. Do you still want to send ?");
-            }
-
+        if (comments == "") {
+            alert("Please include a Comment");
+            $("textarea#comments").focus();
+            return false;
+        }
         // send mail php
         var sendMailUrl = $("#sendMailUrl").val();
 
@@ -67,14 +66,14 @@ jQuery(document).ready(function($){
             type:"POST",
             url: sendMailUrl,
             data: dataString,
-            success: success()
+            success: formSuccess()
         });
     });
 
 
     // on success...
-    function success(){
-        alert("Thanks for your message!");
+    function formSuccess() {
+        alert("Your message has been submitted. Thank you!")
     }
 
     return false;

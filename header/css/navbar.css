@@ -53,6 +53,14 @@ small {
     color: #ff6600;
 }
 
+.firstLetter:first-of-type:first-letter{
+  color:  #ff6600;
+  font-size: 6em;
+  line-height: 1;
+  margin: -.1em .1em 0 -.1em;
+
+}
+
 #header .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
     color: #ff6600;

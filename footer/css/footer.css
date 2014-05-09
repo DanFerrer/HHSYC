@@ -25,7 +25,19 @@ footer#footer {
 }
 
 .social-icons a.youtube:hover{
-    color: red;
+    color: #c4302b;
+}
+
+.social-icons a.twitter:hover{
+    color:  #55acee;
+}
+
+.social-icons a.facebook:hover{
+    color: #3b5998;
+}
+
+.social-icons a.instagram:hover{
+    color: #3f729b;
 }
 
 hr {
