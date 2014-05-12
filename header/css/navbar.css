@@ -2,6 +2,9 @@ body {
     padding-top: 50px;
 }
 
+h1, h2, h3, h4, h5, h6, .page-header {
+    font-family: 'Dosis', sans-serif;}
+
 .active-tab {
     border-bottom: solid #ff6600 5px;
 }
@@ -59,12 +62,10 @@ body {
     border-radius: 1px;
 }
 
-/*@media (min-width: 768px) {*/
-    /*.music-toggle {*/
-        /*display: none;*/
-    /*}*/
-/*}*/
 
+.title {
+    margin-bottom: 40px;
+}
 
 .logo img {
     max-width: 100px;
