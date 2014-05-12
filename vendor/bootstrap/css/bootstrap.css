@@ -3465,7 +3465,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eee;
+  color: #ff6600;
+  -webkit-transition: color 0.3s ease;  -moz-transition: color 0.3s ease;  -o-transition: color 0.3s ease;  transition: color 0.3s ease;
 }
 .nav > li.disabled > a {
   color: #999;
@@ -3574,7 +3575,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #fff;
-  background-color: #428bca;
+  background-color: #ff6600;
 }
 .nav-stacked > li {
   float: none;
