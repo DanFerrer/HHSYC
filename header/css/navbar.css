@@ -32,9 +32,45 @@ body {
     border-color: #252525;
 }
 
+.music-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-left: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.collapse .navbar-collapse #cp_widget_d5fd2a40-988c-4804-8e34-ae834d244c48 {
+    display: none;
+}
+
+.music-toggle:focus {
+    outline: none;
+}
+.music-focus .fa-play {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+/*@media (min-width: 768px) {*/
+    /*.music-toggle {*/
+        /*display: none;*/
+    /*}*/
+/*}*/
+
+
 .logo img {
     max-width: 100px;
 }
+
+
 
 .btn-orange {
     color: #ffffff;
@@ -103,11 +139,7 @@ small {
 
 }
 
-@media (max-width: 767px) {
-    .navbar-collapse .nav > .divider-vertical {
-        display: none;
-    }
-}
+
 
 
 
