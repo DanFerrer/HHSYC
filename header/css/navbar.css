@@ -2,8 +2,13 @@ body {
     padding-top: 50px;
 }
 
-h1, h2, h3, h4, h5, h6, .page-header {
-    font-family: 'Dosis', sans-serif;}
+h1, h2, h3, h4, h5, h6, span, .page-header {
+    font-family: 'Dosis', sans-serif;
+}
+
+small {
+    font-family: 'Lato', sans-serif;
+}
 
 .active-tab {
     border-bottom: solid #ff6600 5px;

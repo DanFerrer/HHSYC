@@ -16,12 +16,36 @@ footer#footer {
 
 .footer-brand {
     font-size: 1em;
-    text-shadow: 0 0 10px #ff6600;
+}
+
+div.footer-tagline a:hover {
+    color: #ff6600;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, .6);
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+/*.footer-tagline em {*/
+    /*color: #ffffff*/
+/*}*/
+
+a:hover {
+    text-decoration: none;
 }
 
 .social-icons a {
     text-decoration: none;
     color: #ffffff;
+}
+
+.social-icons a:hover {
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, .6);
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 .social-icons a.youtube:hover{

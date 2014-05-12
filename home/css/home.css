@@ -9,6 +9,42 @@ div.tagline h2 {
     text-shadow: 0 0 10px #000;
 }
 
+em {
+    color: #ff6600
+}
+
+
+div.social-twitter a,
+div.social-youtube a  {
+    color: #333;
+    font-family: 'Dosis', sans-serif;
+}
+
+
+div.social-twitter a:hover,
+div.social-youtube a:hover {
+    color: #ff6600;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, .6);
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+.social-title {
+    text-align: left;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .social-title {
+        text-align: center;
+    }
+}
+
+
+
+
 .home {
     min-height: 20px;
     padding: 19px;
