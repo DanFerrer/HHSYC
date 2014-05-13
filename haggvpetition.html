@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>HHSYC | Operation FLEET</title>
+    <title>HHSYC - Home</title>
     <meta name="author" content="Operation FLEET">
     <meta name="description" content=""> <!--todo: add meta tags in discription for SEO -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,9 +16,10 @@
     <link rel="stylesheet" href="vendor/font-awesome-4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="header/css/navbar.css">
     <link rel="stylesheet" href="footer/css/footer.css">
+    <link rel="stylesheet" href="home/css/home.css">
+    <link rel="stylesheet" href="petition/css/petition.css">
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="programs/css/operationfleet.css">
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -29,7 +30,6 @@
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
-
 
 <nav id="header" class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
@@ -75,70 +75,118 @@
     </div>
 </nav>
 
-<div class="collapse" id="search-bar">
-    <div class="container">
-        <form class="navbar-form" role="search">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-                <div class="input-group-btn">
-                    <button class="btn btn-orange" type="submit">
-                        <i class="glyphicon glyphicon-search"></i>
-                    </button>
+<div class="container">
+    <div class="text-center">
+        <h1 class="page-header">HIP-HOP AGAINST GUN & GANG VIOLENCE PROJECT</h1>
+        <h2><i>1,000,105 Signatures in 105 Days
+        </i></h2>
+        <img class="petition-logo" src="petition/img/image003.png" class="img-responsive" style="margin-left: auto; margin-right: auto" >
+        <br >
+        <p>We, the undersigned, support the Hip-Hop Against Gun & Gang Violence Project and
+            PETITION TO END GUN & GANG VIOLENCE
+            in our Schools, Homes and Communities.  We want Corporations & Celebrities to be more "Socially Responsible" and partner with neighborhoods to address Poverty, Illiteracy, Substance Abuse, HIV/AIDS, Unemployment, Recidivism, Gun and Gang Violence, as well as the need for Quality After-School Programs, Cultural, Spiritual, Political & Economic Empowerment for our Children, Youth and Young Adults.
+        </p>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <form name="petition" method="post" action="petition/php/petition-form.php">
+
+                <!-- NAME -->
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" name="name" class="form-control" required="required">
                 </div>
-            </div>
-        </form>
+
+                <!-- ADDRESS -->
+                <div class="form-group">
+                    <label>Address</label>
+                    <input type="text" name="address" class="form-control" required="required">
+                </div>
+
+                <!-- ADDRESS -->
+                <div class="form-group">
+                    <label>Address</label>
+                    <input type="text" name="address" class="form-control" required="required">
+                </div>
+
+                <!-- CITY -->
+                <div class="form-group">
+                    <label>City</label>
+                    <input type="text" name="city" class="form-control" required="required">
+                </div>
+
+                <!-- STATE -->
+                <div class="form-group">
+                    <label>State</label>
+                    <input type="text" name="state" class="form-control" required="required">
+                </div>
+
+                <!-- ZIPCODE -->
+                <div class="form-group">
+                    <label>Zip</label>
+                    <input type="number" name="zip" class="form-control" required="required">
+                </div>
+
+                <!-- PHONE -->
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input type="tel" name="phone" class="form-control" required="required">
+                </div>
+
+                <!-- DATE -->
+                <div class="form-group">
+                    <label>Date</label>
+                    <input type="date" name="date" class="form-control" required="required"  >
+                </div>
+
+                <!-- EMAIL -->
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" class="form-control" required="required">
+                </div>
+
+                <!-- AGE -->
+                <div class="form-group">
+                    <label>Age</label>
+                    <input type="number" name="age" class="form-control" required="required">
+                </div>
+
+                <button type="submit" class="text-center btn btn-lg btn-orange">Submit</button>
+
+                <br />
+                <br />
+                <br />
+
+                <div class="text-center">
+                    <p>For Info: <strong>RandyKFisher@gmail.com</strong></p>
+                    <p class="form-tag"><strong><i>* Must be at least 10 years old to sign.</i></strong></p>
+                </div>
+
+                <br />
+
+                <input type="hidden" name="_redirect" value="../../index.html" />
+                <input type="hidden" name="_thankyou_email" value="email" />
+                <input type="hidden" name="_from" value="info@hhsyc.org" />
+                <input type="hidden" name="_subject" value="Thanks for signing up" />
+                <input type="hidden" name="_thankyou_message" value="Hi {name}!\n\nThanks for signing up, we'll get in touch with you soon.\n\n-Staff" />
+                <input type="hidden" name="_recipient[]" value="hiphopbooks@yahoo.com" />
+                <input type="hidden" name="_recipient[]" value="johncopen@gmail.com" />
+
+            </form>
+        </div>
     </div>
 </div>
-
-<div class="fleet container">
-    <h1 class="page-header">Operation FLEET</h1>
-    <p>The objective of this program is to enlighten participants about Financial Literacy, Employment and Entrepreneurship so they can:</p>
-    <ul class="fleet-list">
-        <li>a) Manage their Personal and Business Finances</li>
-        <li>b) Prepare for Job opportunities;</li>
-        <li>c) Learn how to Start their Own Business</li>
-        <li>d) become part of a team that will help eliminate poverty in the United States and abroad through support from the United Nations (UN), their agencies and affiliates.</li>
-    </ul>
-    <p>Participants will learn about the "World of Work,” including resume writing, dress codes, interview preparation,
-        salary negotiations, time management, leadership skills, work habits, management responsibilities, etc.</p>
-    <p>By working with business leaders, celebrities, elected officials, executives, financial institutions, real estate companies,
-        and stock brokers participants will be enlightened about:</p>
-    <ul class="fleet-list">
-        <li>The “World of Wall Street"</li>
-        <li>Money</li>
-        <li> Debit & Business Management</li>
-        <li>Budgets</li>
-        <li>Privacy</li>
-        <li>Fraud</li>
-        <li>Checking & Savings Accounts</li>
-        <li>Building & Repairing Credit</li>
-        <li>Investment & Estate Planning</li>
-        <li>Stocks</li>
-        <li>Bonds</li>
-        <li>CDs</li>
-        <li>Interest rates</li>
-        <li>Mutual funds</li>
-        <li>401-K programs</li>
-        <li>Credit & Debit Cards</li>
-        <li>Taxes</li>
-        <li>Wills</li>
-        <li>Real Estate</li>
-        <li>Home Ownership</li>
-        <li>Gentrification; Eminent Domain; College Tuition</li>
-        <li>Corporations</li>
-        <li>Socially Responsible Investments</li>
-        <li>Family & Retirement Planning. (The retail value of our FREE 3-part “Power of the Dollar” Course is $4,000)</li>
-        <li>Executives</li>
-        <li>Celebrities</li>
-        <li>Elected Officials</li>
-    </ul>
-    <p>Clergy and Community Leaders will also help reinforce the message and goals of the program through books, literature,
-        tapes, DVDs, webinars, webcast, workshops, seminars, conferences, internet chat rooms, websites, blogs, business meetings,
-        audio and video conference calls.
-    </p>
-    <div class="row">
-        <div class="register-button text-center">
-            <p class="btn btn-lg btn-orange"><a href="register.html">Sign up for our programs here!</a></p>
+<div class="container">
+    <div class="row text-center">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+            <a href="https://www.power1051fm.com/main.html">
+                <img class="hhsyc-logo" src="petition/img/power105.jpg">
+            </a>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+            <a href="https://hhsyc.org">
+                <img class="power105-logo" src="petition/img/hhsyclogo2014.png">
+            </a>
         </div>
     </div>
 </div>
@@ -160,8 +208,6 @@
         <p class="pull-right">&copy; HHSYC 2014</p>
     </div>
 </footer>
-
-
 
 <!--Javascript-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

@@ -1,0 +1,23 @@
+p.form-tag  {
+    color: darkred;
+}
+
+img.hhsyc-logo,
+img.power105-logo {
+
+    max-width: 100%;
+    height: auto;
+}
+
+img.petition-logo {
+    margin-left: auto;
+    margin-right: auto
+}
+
+form {
+    padding-bottom:20px;
+}
+
+p {
+    font-size: 20px;
+}

@@ -9,7 +9,7 @@ div.tagline h2 {
     text-shadow: 0 0 10px #000;
 }
 
-em {
+.title em {
     color: #ff6600
 }
 

@@ -1,0 +1,36 @@
+li {
+    list-style-type: none;
+}
+.fleet {
+    line-height: 2;
+    font-size: 20px;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+.fleet ul {
+    font-weight: bold;
+}
+
+.fleet-list {
+    text-align: center;
+}
+
+.register-button {
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+
+    .fleet-list {
+        text-align: left;
+    }
+
+}
+
