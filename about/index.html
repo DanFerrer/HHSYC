@@ -12,11 +12,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Stylesheets-->
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="vendor/font-awesome-4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" href="header/css/navbar.css">
-    <link rel="stylesheet" href="footer/css/footer.css">
-    <link rel="stylesheet" href="about/css/about.css">
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../vendor/font-awesome-4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="../header/css/navbar.css">
+    <link rel="stylesheet" href="../footer/css/footer.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
 
@@ -45,20 +45,20 @@
                 <span class="sr-only">Toggle Music</span>
                 <i class="fa fa-2x fa-music"></i>
             </span>
-            <a class="logo" href="index.html">
-                <img  src="header/img/hhsyclogo.png" title="Hip-Hop Summit Youth Council" alt="Hip-hop Summit Youth Council">
+            <a class="logo" href="../index.html">
+                <img  src="../header/img/hhsyclogo.png" title="Hip-Hop Summit Youth Council" alt="Hip-hop Summit Youth Council">
             </a>
         </div>
         <div class="collapse navbar-collapse" id="hhsyc-navbar">
             <ul class="nav navbar-nav">
-                <li class="active-tab"><a href="#">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="register.html">Register</a></li>
-                <li><a href="donate.html">Donate</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li class="active-tab"><a href="index.html">About</a></li>
+                <li><a href="../programs/index.html">Programs</a></li>
+                <li><a href="../news/index.html">News</a></li>
+                <li><a href="../gallery/index.html">Gallery</a></li>
+                <li><a href="../programs/register.html">Register</a></li>
+                <li><a href="../donate/index.html">Donate</a></li>
+                <li><a href="../contact/index.html">Contact</a></li>
             </ul>
             <div data-toggle="collapse" data-target="#music-player" class="music-toggle hidden-xs"><i class="fa fa-2x fa-music"></i></div>
         </div>
@@ -87,7 +87,7 @@
             <li><a href="#mission" data-toggle="tab">Mission</a></li>
             <li><a href="#purpose" data-toggle="tab">Purpose</a></li>
             <li><a href="#team" data-toggle="tab">Team</a></li>
-            <li><a href="#partners" data-toggle="tab">Partners</a></li>
+            <!--<li><a href="#partners" data-toggle="tab">Partners</a></li>-->
         </ul>
         <div class="tab-content">
             <div class="tab-pane fade in active" id="history">
@@ -185,7 +185,7 @@
                 <h3 class="text-center">Charles Fisher: Chairman</h3>
                 <div class="row">
                     <div class="col-md-4">
-                        <img class="team-image center-block img-responsive" src="about/img/charles.png">
+                        <img class="team-image center-block img-responsive" src="img/charles.png">
                     </div> <br />
                     <div class="col-md-4">
                         <p>Charles Fisher was born on November 6, 1954 in Brooklyn New York. He later moved to St. Albans,
@@ -212,7 +212,7 @@
                 <h3 class="text-center">Randy Fisher: Executive Director</h3>
                 <div class="row">
                     <div class="col-md-4">
-                        <img class="team-image center-block img-responsive" src="about/img/randy.png">
+                        <img class="team-image center-block img-responsive" src="img/randy.png">
                     </div>
                     <br />
                     <div class="col-md-4">
@@ -238,17 +238,17 @@
                 <hr />
                 <br />
                 <p>We have a variety of people that work with us. Check them out!</p>
-                <div class="row">
-                    <div class="col-md-4 col-sm-4 col-xs-4">
-                        <img src="about/img/daymondjohn.png" class="center-block team-image img-responsive">
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-4">
-                        <img src="about/img/" class="center-blockteam-image img-responsive">
-                    </div>
-                    <div class="col-md-4 col-sm-4 col-xs-4">
-                        <img src="about/img/" class="center-block team-image img-responsive">
-                    </div>
-                </div>
+                <!--<div class="row">-->
+                    <!--<div class="col-md-4 col-sm-4 col-xs-4">-->
+                        <!--<img src="img/daymondjohn.png" class="center-block team-image img-responsive">-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4 col-sm-4 col-xs-4">-->
+                        <!--<img src="img" class="center-blockteam-image img-responsive">-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4 col-sm-4 col-xs-4">-->
+                        <!--<img src="img" class="center-block team-image img-responsive">-->
+                    <!--</div>-->
+                <!--</div>-->
                 <br />
                 <div class="row">
                     <div class="col-md-12 text-center">
@@ -276,7 +276,7 @@
             </div>
         </div>
     </div>
-    <div class="tab-pane fade" id="partners">...</div>
+    <!--<div class="tab-pane fade" id="partners">...</div>-->
 </div>
 
 <footer id="footer">
@@ -301,7 +301,7 @@
 
 <!--Javascript-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.js"></script>
 
 <script type="text/javascript">
    $(document).ready(function ($) {

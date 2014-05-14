@@ -1,9 +1,9 @@
-jQuery(document).ready(function($){
+$(document).ready(function($){
 
     'use strict';
 
     // on submit...
-    $("#contactForm #submit").click(function() {
+    $("#submit").click(function() {
 
         //required:
 
@@ -76,5 +76,4 @@ jQuery(document).ready(function($){
         alert("Your message has been submitted. Thank you!")
     }
 
-    return false;
 });

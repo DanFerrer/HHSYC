@@ -1,0 +1,38 @@
+.program-item {
+    margin-bottom: 15px;
+}
+
+div.program-item h4 {
+    color: #ff6600;
+    font-size:  24px;
+}
+
+div.program-item p {
+    font-size: 16px;
+}
+
+.program-item {
+    text-align: left;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+
+    .program-item {
+        text-align: center;
+    }
+
+}
+
+
+i.program-icon {
+    border: 2px solid #ff6600;
+    border-radius: 50%;
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    line-height: 136px;
+    vertical-align: middle;
+    text-align: center;
+    color:  #ff6600;
+}
+

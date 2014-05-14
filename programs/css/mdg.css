@@ -1,0 +1,7 @@
+.tab-pane ul > li {
+    list-style-type: none;
+}
+
+div.programs {
+    margin-bottom: 15px;
+}

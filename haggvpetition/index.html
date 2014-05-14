@@ -12,12 +12,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Stylesheets-->
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="vendor/font-awesome-4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" href="header/css/navbar.css">
-    <link rel="stylesheet" href="footer/css/footer.css">
-    <link rel="stylesheet" href="home/css/home.css">
-    <link rel="stylesheet" href="petition/css/petition.css">
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../vendor/font-awesome-4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="../header/css/navbar.css">
+    <link rel="stylesheet" href="../footer/css/footer.css">
+    <link rel="stylesheet" href="../home/css/home.css">
+    <link rel="stylesheet" href="css/petition.css">
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
 
@@ -45,19 +45,19 @@
                 <i class="fa fa-2x fa-music"></i>
             </span>
             <a class="logo" href="index.html">
-                <img  src="header/img/hhsyclogo.png" title="Hip-Hop Summit Youth Council" alt="Hip-hop Summit Youth Council">
+                <img  src="../header/img/hhsyclogo.png" title="Hip-Hop Summit Youth Council" alt="Hip-hop Summit Youth Council">
             </a>
         </div>
         <div class="collapse navbar-collapse" id="hhsyc-navbar">
             <ul class="nav navbar-nav">
                 <li class="active-tab"><a href="#">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="register.html">Register</a></li>
-                <li><a href="donate.html">Donate</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="../about/index.html">About</a></li>
+                <li><a href="../programs/index.html">Programs</a></li>
+                <li><a href="../news/index.html">News</a></li>
+                <li><a href="../gallery/index.html">Gallery</a></li>
+                <li><a href="../programs/register.html">Register</a></li>
+                <li><a href="../donate/index.html">Donate</a></li>
+                <li><a href="../contact/index.html">Contact</a></li>
             </ul>
             <div data-toggle="collapse" data-target="#music-player" class="music-toggle hidden-xs"><i class="fa fa-2x fa-music"></i></div>
         </div>
@@ -80,7 +80,7 @@
         <h1 class="page-header">HIP-HOP AGAINST GUN & GANG VIOLENCE PROJECT</h1>
         <h2><i>1,000,105 Signatures in 105 Days
         </i></h2>
-        <img class="petition-logo" src="petition/img/image003.png" class="img-responsive" style="margin-left: auto; margin-right: auto" >
+        <img src="img/image003.png" class="petition-logo img-responsive">
         <br >
         <p>We, the undersigned, support the Hip-Hop Against Gun & Gang Violence Project and
             PETITION TO END GUN & GANG VIOLENCE
@@ -89,7 +89,7 @@
     </div>
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
-            <form name="petition" method="post" action="petition/php/petition-form.php">
+            <form name="petition" method="post" action="php/petition-form.php">
 
                 <!-- NAME -->
                 <div class="form-group">
@@ -164,7 +164,7 @@
 
                 <br />
 
-                <input type="hidden" name="_redirect" value="../../index.html" />
+                <input type="hidden" name="_redirect" value="../thankyou.html" />
                 <input type="hidden" name="_thankyou_email" value="email" />
                 <input type="hidden" name="_from" value="info@hhsyc.org" />
                 <input type="hidden" name="_subject" value="Thanks for signing up" />
@@ -180,12 +180,12 @@
     <div class="row text-center">
         <div class="col-md-6 col-sm-6 col-xs-6">
             <a href="https://www.power1051fm.com/main.html">
-                <img class="hhsyc-logo" src="petition/img/power105.jpg">
+                <img class="hhsyc-logo" src="img/power105.jpg">
             </a>
         </div>
         <div class="col-md-6 col-sm-6 col-xs-6">
             <a href="https://hhsyc.org">
-                <img class="power105-logo" src="petition/img/hhsyclogo2014.png">
+                <img class="power105-logo" src="img/hhsyclogo2014.png">
             </a>
         </div>
     </div>
@@ -211,7 +211,7 @@
 
 <!--Javascript-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.js"></script>
 
 </body>
 </html>

@@ -11,6 +11,21 @@
     <meta name="description" content=""> <!--todo: add meta tags in discription for SEO -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Load Jquery (DO NOT CHANGE ORDER) -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="vendor/jquerymobile/jquery.mobile.custom.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".carousel-inner").swiperight(function() {
+                $(this).parent().carousel('prev');
+            });
+            $(".carousel-inner").swipeleft(function() {
+                $(this).parent().carousel('next');
+            });
+        })();
+    </script>
+
     <!--Stylesheets-->
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="vendor/font-awesome-4.0.3/css/font-awesome.css">
@@ -39,10 +54,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <span class="music-toggle visible-xs" data-toggle="collapse" data-target="#music-player">
-                <span class="sr-only">Toggle Music</span>
-                <i class="fa fa-2x fa-music"></i>
-            </span>
+            <!--<span class="music-toggle visible-xs" data-toggle="collapse" data-target="#music-player">-->
+                <!--<span class="sr-only">Toggle Music</span>-->
+                <!--<i class="fa fa-2x fa-music"></i>-->
+            <!--</span>-->
             <a class="logo" href="index.html">
                 <img  src="header/img/hhsyclogo.png" title="Hip-Hop Summit Youth Council" alt="Hip-hop Summit Youth Council">
             </a>
@@ -50,25 +65,25 @@
         <div class="collapse navbar-collapse" id="hhsyc-navbar">
             <ul class="nav navbar-nav">
                 <li class="active-tab"><a href="#">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="register.html">Register</a></li>
-                <li><a href="donate.html">Donate</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about/index.html">About</a></li>
+                <li><a href="programs/index.html">Programs</a></li>
+                <li><a href="news/index.html">News</a></li>
+                <li><a href="gallery/index.html">Gallery</a></li>
+                <li><a href="programs/register.html">Register</a></li>
+                <li><a href="donate/index.html">Donate</a></li>
+                <li><a href="contact/index.html">Contact</a></li>
            </ul>
-           <div data-toggle="collapse" data-target="#music-player" class="music-toggle hidden-xs"><i class="fa fa-2x fa-music"></i></div>
+           <!--<div data-toggle="collapse" data-target="#music-player" class="music-toggle hidden-xs"><i class="fa fa-2x fa-music"></i></div>-->
         </div>
         <div class="collapse" id="music-player">
             <div class="container">
-                <div id="cp_widget_f92245b0-70b4-460e-a52c-e0d5efda801d">...</div><script type="text/javascript">
-                var cpo = []; cpo["_object"] ="cp_widget_f92245b0-70b4-460e-a52c-e0d5efda801d"; cpo["_fid"] = "AYBALqbKSb1R";
-                var _cpmp = _cpmp || []; _cpmp.push(cpo);
-                (function() { var cp = document.createElement("script"); cp.type = "text/javascript";
-                    cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
-                    var c = document.getElementsByTagName("script")[0];
-                    c.parentNode.insertBefore(cp, c); })(); </script>
+                <!--<div id="cp_widget_f92245b0-70b4-460e-a52c-e0d5efda801d">...</div><script type="text/javascript">-->
+                <!--var cpo = []; cpo["_object"] ="cp_widget_f92245b0-70b4-460e-a52c-e0d5efda801d"; cpo["_fid"] = "AYBALqbKSb1R";-->
+                <!--var _cpmp = _cpmp || []; _cpmp.push(cpo);-->
+                <!--(function() { var cp = document.createElement("script"); cp.type = "text/javascript";-->
+                    <!--cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";-->
+                    <!--var c = document.getElementsByTagName("script")[0];-->
+                    <!--c.parentNode.insertBefore(cp, c); })(); </script>-->
             </div>
         </div>
     </div>
@@ -90,7 +105,7 @@
                     <div class="lead">
                         <h1><strong>1,000,105 in 105 Days</strong></h1>
                         <p>Power 105.1 teams up with HHSYC to put an end to an end to Gun and Gang Violence</p>
-                        <p><a class="btn btn-lg btn-orange" href="haggvpetition.html" role="link">Make A Difference Today!</a></p>
+                        <p><a class="btn btn-lg btn-orange" href="haggvpetition/index.html" role="link">Make A Difference Today!</a></p>
                     </div>
                 </div>
             </div>
@@ -121,7 +136,7 @@
                 <div class="carousel-caption lead">
                     <h1><strong>HEEP</strong></h1>
                     <p>Educating the entrepreneurs of the future with what they need to succeed today</p>
-                    <p><a class="btn btn-lg btn-orange" href="#" role="button">Join Now!</a></p>
+                    <p><a class="btn btn-lg btn-orange" href="programs/heep.html" role="button">Join Now!</a></p>
                 </div>
             </div>
         </div>
@@ -153,7 +168,7 @@
                     <i class="program-icon fa fa-5x fa-users"></i>
                     <h4>Operation FLEET</h4>
                     <p>Improving the image and unity within the Hip-Hop Community while reducing crime and violence in our schools, home and community.</p>
-                    <a href="operation-fleet.html" class="btn btn-orange btn-lg">Learn More!</a>
+                    <a href="programs/operation-fleet.html" class="btn btn-orange btn-lg">Learn More!</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-3 text-center">
@@ -161,7 +176,7 @@
                     <i class="program-icon fa fa-5x fa-book"></i>
                     <h4>Read 2 Succeed</h4>
                     <p>Working with Authors and Celebrities to promote the importance of literacy!</p>
-                    <a href="read-2-succeed.html" class="btn btn-orange btn-lg">Learn More!</a>
+                    <a href="programs/read-2-succeed.html" class="btn btn-orange btn-lg">Learn More!</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-3 text-center">
@@ -169,7 +184,7 @@
                     <i class="program-icon fa fa-5x fa-dollar"></i>
                     <h4>Time 2 Shine</h4>
                     <p>Bring your best game, to have a shot at real fame!</p>
-                    <a href="time-2-shine.html" class="btn btn-orange btn-lg">Learn More!</a>
+                    <a href="programs/time-2-shine.html" class="btn btn-orange btn-lg">Learn More!</a>
                 </div>
             </div>
             <div class="col-md-3 col-sm-3 text-center">
@@ -177,7 +192,7 @@
                     <i class="program-icon fa fa-5x fa-user-md"></i>
                     <h4>Hip Hop 4 Better Health</h4>
                     <p>Enlightening our participants about issues such as Health Education, Vitamins & Nutrition, Diet & Exercise, Preventive & Alternative Medicine, and Quality Healthcare Services.</p>
-                    <a href="hip-Hop-4-better-health.html" class="btn btn-orange btn-lg">Learn More!</a>
+                    <a href="programs/hip-Hop-4-better-health.html" class="btn btn-orange btn-lg">Learn More!</a>
                 </div>
             </div>
         </div>
@@ -221,21 +236,6 @@
         <p class="pull-right">&copy; HHSYC 2014</p>
     </div>
 </footer>
-
-<!--Javascript-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="vendor/jquerymobile/jquery.mobile.custom.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.js"></script>
-<script>
-    $(document).ready(function() {
-        $("#myCarousel").swiperight(function() {
-            $("#myCarousel").carousel('prev');
-        });
-        $("#myCarousel").swipeleft(function() {
-            $("#myCarousel").carousel('next');
-        });
-    });
-</script>
 
 </body>
 </html>

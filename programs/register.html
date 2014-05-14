@@ -12,11 +12,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Stylesheets-->
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="vendor/font-awesome-4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" href="header/css/navbar.css">
-    <link rel="stylesheet" href="footer/css/footer.css">
-    <link rel="stylesheet" href="vendor/chosen/chosen.css">
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../vendor/font-awesome-4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="../header/css/navbar.css">
+    <link rel="stylesheet" href="../footer/css/footer.css">
+    <link rel="stylesheet" href="../vendor/chosen/chosen.css">
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
     <Style type="text/css">
@@ -48,33 +48,33 @@
                 <span class="sr-only">Toggle Music</span>
                 <i class="fa fa-2x fa-music"></i>
             </span>
-            <a class="logo" href="index.html">
-                <img  src="header/img/hhsyclogo.png" title="Hip-Hop Summit Youth Council" alt="Hip-hop Summit Youth Council">
+            <a class="logo" href="../index.html">
+                <img  src="../header/img/hhsyclogo.png" title="Hip-Hop Summit Youth Council" alt="Hip-hop Summit Youth Council">
             </a>
         </div>
         <div class="collapse navbar-collapse" id="hhsyc-navbar">
             <ul class="nav navbar-nav">
-                <li class="active-tab"><a href="#">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="register.html">Register</a></li>
-                <li><a href="donate.html">Donate</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/index.html">About</a></li>
+                <li><a href="index.html">Programs</a></li>
+                <li><a href="../news/index.html">News</a></li>
+                <li><a href="../gallery/index.html">Gallery</a></li>
+                <li class="active-tab"><a href="register.html">Register</a></li>
+                <li><a href="../donate/index.html">Donate</a></li>
+                <li><a href="../contact/index.html">Contact</a></li>
             </ul>
             <div data-toggle="collapse" data-target="#music-player" class="music-toggle hidden-xs"><i class="fa fa-2x fa-music"></i></div>
         </div>
         <div class="collapse" id="music-player">
-            <div class="container">
-                <div id="cp_widget_f92245b0-70b4-460e-a52c-e0d5efda801d">...</div><script type="text/javascript">
-                var cpo = []; cpo["_object"] ="cp_widget_f92245b0-70b4-460e-a52c-e0d5efda801d"; cpo["_fid"] = "AYBALqbKSb1R";
-                var _cpmp = _cpmp || []; _cpmp.push(cpo);
-                (function() { var cp = document.createElement("script"); cp.type = "text/javascript";
-                    cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
-                    var c = document.getElementsByTagName("script")[0];
-                    c.parentNode.insertBefore(cp, c); })(); </script>
-            </div>
+            <!--<div class="container">-->
+                <!--<div id="cp_widget_f92245b0-70b4-460e-a52c-e0d5efda801d">...</div><script type="text/javascript">-->
+                <!--var cpo = []; cpo["_object"] ="cp_widget_f92245b0-70b4-460e-a52c-e0d5efda801d"; cpo["_fid"] = "AYBALqbKSb1R";-->
+                <!--var _cpmp = _cpmp || []; _cpmp.push(cpo);-->
+                <!--(function() { var cp = document.createElement("script"); cp.type = "text/javascript";-->
+                    <!--cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";-->
+                    <!--var c = document.getElementsByTagName("script")[0];-->
+                    <!--c.parentNode.insertBefore(cp, c); })(); </script>-->
+            <!--</div>-->
         </div>
     </div>
 </nav>
@@ -96,7 +96,7 @@
 
 <div class="container">
     <h1 class="page-header">HHSYC Program Registration <small>General Information</small></h1>
-    <form id="register-form" method="POST" action="programs/php/form_processor.php">
+    <form id="register-form" method="POST" action="php/form_processor.php">
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
@@ -155,42 +155,43 @@
                     <small>You may select multiple programs one at a time</small>
                 </h3>
                 <select class="program-select" multiple>
-                    <option value="Read 2 Succeed Through Hip-Hop and Sports Project">Read 2 Succeed Through Hip-Hop &amp; Sports Project</option>
-                    <option value="Hip-Hop Against Gun and Gang Violence Project">Hip-Hop Against Gun &amp; Gang Violence Project</option>
-                    <option value="Hip-Hop Economic Empowerment Program (HEEP)">Hip-Hop Economic Empowerment Program (HEEP)</option>
-                    <option value="Hip-Hop Against Drugs (HAD)">Hip-Hop Against Drugs (HAD)</option>
-                    <option value="Time 2 Shine">Time 2 Shine</option>
-                    <option value="Rap 2 Bridge the Gap">Rap 2 Bridge the Gap</option>
-                    <option value="Hip-Hop Entertainment Business Program">Hip-Hop Entertainment Business Program</option>
-                    <option value="Hip-Hop Goes to Hollywood Project">Hip-Hop Goes to Hollywood Project</option>
-                    <option value="Hip-Hop 4 Better Health Program">Hip-Hop 4 Better Health Program</option>
-                    <option value="It's Dope To Vote">It's Dope To Vote</option>
-                    <option value="Sandy Rebuilding AID Project (S-RAP)">Sandy Rebuilding AID Project (S-RAP)</option>
-                    <option value="Artists, Actors, Athletes, Authors, and Activists Against AIDS (A-TEAM)">Artists, Actors, Athletes, Authors, &amp; Activists Against AIDS (A-TEAM)</option>
-                    <option value="Community Ambassadors 4 Peace">Community Ambassadors 4 Peace</option>
-                    <option value="Character Enlightenment Program">Character Enlightenment Program</option>
-                    <option value="Jobs">Jobs</option>
-                    <option value="Internships">Internships</option>
-                    <option value="Entrepreneurship Opportunities">Entrepreneurship Opportunities</option>
-                    <option value="Daymond John Academy Scholarship">Daymond John Academy Scholarship</option>
-                    <option value="Shark-A-Nomics 101">Shark-A-Nomics 101</option>
-                    <option value="Street Team Membership">Street Team Membership</option>
-                    <option value='Hip-Hop "Power Poll" Registration'>Hip-Hop "Power Poll" Registration</option>
-                    <option value="Hip-Hop Summit Youth Council General Membership Registration">Hip-Hop Summit Youth Council General Membership Registration</option>
-                    <option value="Community Legal Assistance Program (CLAP)">Community Legal Assistance Program (CLAP)</option>
-                    <option value="Hip-Hop &amp; Politics Project">Hip-Hop &amp; Politics Project</option>
-                    <option value="Hip-Hop 4 Better Housing Program">Hip-Hop 4 Better Housing Program</option>
-                    <option value="Foreclosure Assistance Network (FAN)">Foreclosure Assistance Network (FAN)</option>
-                    <option value="Hip-Hop Supports the MDGs">Hip-Hop Supports the MDGs</option>
-                    <option value="Operation FLEET">Operation FLEET</option>
+                    <option name="interest[]"  value="Read 2 Succeed Through Hip-Hop and Sports Project">Read 2 Succeed Through Hip-Hop &amp; Sports Project</option>
+                    <option name="interest[]" value="Hip-Hop Against Gun and Gang Violence Project">Hip-Hop Against Gun &amp; Gang Violence Project</option>
+                    <option name="interest[]" value="Hip-Hop Economic Empowerment Program (HEEP)">Hip-Hop Economic Empowerment Program (HEEP)</option>
+                    <option name="interest[]" value="Hip-Hop Against Drugs (HAD)">Hip-Hop Against Drugs (HAD)</option>
+                    <option name="interest[]" value="Time 2 Shine">Time 2 Shine</option>
+                    <option name="interest[]" value="Rap 2 Bridge the Gap">Rap 2 Bridge the Gap</option>
+                    <option name="interest[]" value="Hip-Hop Entertainment Business Program">Hip-Hop Entertainment Business Program</option>
+                    <option name="interest[]" value="Hip-Hop Goes to Hollywood Project">Hip-Hop Goes to Hollywood Project</option>
+                    <option name="interest[]" value="Hip-Hop 4 Better Health Program">Hip-Hop 4 Better Health Program</option>
+                    <option name="interest[]" value="It's Dope To Vote">It's Dope To Vote</option>
+                    <option name="interest[]" value="Sandy Rebuilding AID Project (S-RAP)">Sandy Rebuilding AID Project (S-RAP)</option>
+                    <option name="interest[]" value="Artists, Actors, Athletes, Authors, and Activists Against AIDS (A-TEAM)">Artists, Actors, Athletes, Authors, &amp; Activists Against AIDS (A-TEAM)</option>
+                    <option name="interest[]" value="Community Ambassadors 4 Peace">Community Ambassadors 4 Peace</option>
+                    <option name="interest[]" value="Character Enlightenment Program">Character Enlightenment Program</option>
+                    <option name="interest[]" value="Jobs">Jobs</option>
+                    <option name="interest[]" value="Internships">Internships</option>
+                    <option name="interest[]" value="Entrepreneurship Opportunities">Entrepreneurship Opportunities</option>
+                    <option name="interest[]" value="Daymond John Academy Scholarship">Daymond John Academy Scholarship</option>
+                    <option name="interest[]" value="Shark-A-Nomics 101">Shark-A-Nomics 101</option>
+                    <option name="interest[]" value="Street Team Membership">Street Team Membership</option>
+                    <option name="interest[]" value='Hip-Hop "Power Poll" Registration'>Hip-Hop "Power Poll" Registration</option>
+                    <option name="interest[]" value="Hip-Hop Summit Youth Council General Membership Registration">Hip-Hop Summit Youth Council General Membership Registration</option>
+                    <option name="interest[]" value="Community Legal Assistance Program (CLAP)">Community Legal Assistance Program (CLAP)</option>
+                    <option name="interest[]" value="Hip-Hop &amp; Politics Project">Hip-Hop &amp; Politics Project</option>
+                    <option name="interest[]" value="Hip-Hop 4 Better Housing Program">Hip-Hop 4 Better Housing Program</option>
+                    <option name="interest[]" value="Foreclosure Assistance Network (FAN)">Foreclosure Assistance Network (FAN)</option>
+                    <option name="interest[]" value="Hip-Hop Supports the MDGs">Hip-Hop Supports the MDGs</option>
+                    <option name="interest[]" value="Operation FLEET">Operation FLEET</option>
                 </select>
                 <div class="btn-group inline text-center">
                     <span class="btn btn-orange select-all">Select All</span>
                     <span class="btn btn-default deselect-all">Deselect All</span>
                 </div>
 
-                <input type="hidden" name="_redirect" value="index.html">
-                <input type="hidden" name="_thankyou_email" value="email">                <input type="hidden" name="_from" value="info@hhsyc.org" />
+                <input type="hidden" name="_redirect" value="../thankyou.html" />
+                <input type="hidden" name="_thankyou_email" value="email">
+                <input type="hidden" name="_from" value="info@hhsyc.org" />
                 <input type="hidden" name="_subject" value="Thanks for signing up" />
                 <input type="hidden" name="_thankyou_message" value="Hi {first_name}!\n\nThanks for signing up, we'll get in touch with you soon.\n\n-Staff" />
                 <input type="hidden" name="_recipient[]" value="hiphopbooks@yahoo.com" />
@@ -222,9 +223,9 @@
 
 <!--Javascript-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.js"></script>
-<script src="vendor/chosen/chosen.jquery.js"></script>
-<script src="programs/js/register.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.js"></script>
+<script src="../vendor/chosen/chosen.jquery.js"></script>
+<script src="js/register.js"></script>
 <script>
     $(document).ready(function() {
         $(".program-select").chosen(
@@ -248,6 +249,5 @@
         });
     });
 </script>
-
 </body>
 </html>
