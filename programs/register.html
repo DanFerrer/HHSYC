@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="../vendor/font-awesome-4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="../header/css/navbar.css">
     <link rel="stylesheet" href="../footer/css/footer.css">
-    <link rel="stylesheet" href="../vendor/chosen/chosen.css">
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
     <Style type="text/css">
@@ -44,10 +43,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <span class="music-toggle visible-xs" data-toggle="collapse" data-target="#music-player">
-                <span class="sr-only">Toggle Music</span>
-                <i class="fa fa-2x fa-music"></i>
-            </span>
+            <!--<span class="music-toggle visible-xs" data-toggle="collapse" data-target="#music-player">-->
+                <!--<span class="sr-only">Toggle Music</span>-->
+                <!--<i class="fa fa-2x fa-music"></i>-->
+            <!--</span>-->
             <a class="logo" href="../index.html">
                 <img  src="../header/img/hhsyclogo.png" title="Hip-Hop Summit Youth Council" alt="Hip-hop Summit Youth Council">
             </a>
@@ -63,42 +62,18 @@
                 <li><a href="../donate/index.html">Donate</a></li>
                 <li><a href="../contact/index.html">Contact</a></li>
             </ul>
-            <div data-toggle="collapse" data-target="#music-player" class="music-toggle hidden-xs"><i class="fa fa-2x fa-music"></i></div>
+            <!--<div data-toggle="collapse" data-target="#music-player" class="music-toggle hidden-xs"><i class="fa fa-2x fa-music"></i></div>-->
         </div>
-        <div class="collapse" id="music-player">
-            <!--<div class="container">-->
-                <!--<div id="cp_widget_f92245b0-70b4-460e-a52c-e0d5efda801d">...</div><script type="text/javascript">-->
-                <!--var cpo = []; cpo["_object"] ="cp_widget_f92245b0-70b4-460e-a52c-e0d5efda801d"; cpo["_fid"] = "AYBALqbKSb1R";-->
-                <!--var _cpmp = _cpmp || []; _cpmp.push(cpo);-->
-                <!--(function() { var cp = document.createElement("script"); cp.type = "text/javascript";-->
-                    <!--cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";-->
-                    <!--var c = document.getElementsByTagName("script")[0];-->
-                    <!--c.parentNode.insertBefore(cp, c); })(); </script>-->
-            <!--</div>-->
-        </div>
+        <!--<div class="collapse" id="music-player">-->
+        <!--</div>-->
     </div>
 </nav>
-
-<div class="collapse" id="search-bar">
-    <div class="container">
-        <form class="navbar-form" role="search">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-                <div class="input-group-btn">
-                    <button class="btn btn-orange" type="submit">
-                        <i class="glyphicon glyphicon-search"></i>
-                    </button>
-                </div>
-            </div>
-        </form>
-    </div>
-</div>
 
 <div class="container">
     <h1 class="page-header">HHSYC Program Registration <small>General Information</small></h1>
     <form id="register-form" method="POST" action="php/form_processor.php">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="form-group">
                     <label>First Name</label>
                     <input type="text" name="first_name" class="form-control" id="first_name">
@@ -111,15 +86,19 @@
                     <label>School/Work</label>
                     <input type="text" name="school_job" class="form-control" id="school_job">
                 </div>
-                <div class="form-group" id="gender">
-                    <label class="radio-inline">
-                        <input type="radio" name="gender" id="male" value="male">
-                        Male
-                    </label>
-                    <label class="radio-inline">
-                        <input type="radio" name="gender" id="female" value="female">
-                        Female
-                    </label>
+                <!--<div class="form-group" id="gender">-->
+                    <!--<label class="radio-inline">-->
+                        <!--<input type="radio" name="gender" id="male" value="male">-->
+                        <!--Male-->
+                    <!--</label>-->
+                    <!--<label class="radio-inline">-->
+                        <!--<input type="radio" name="gender" id="female" value="female">-->
+                        <!--Female-->
+                    <!--</label>-->
+                <!--</div>-->
+                <div class="form-group">
+                    <label>Gender</label>
+                    <input type="text" name="gender" class="form-control" id="gender">
                 </div>
                 <div class="form-group">
                     <label>Age</label>
@@ -150,44 +129,43 @@
                     <input type="email" name="email" class="form-control" id="email">
                 </div>
             </div>
-            <div class="col-md-6">
-                <h3>Select the activity you wish to join from the dropdown <br />
-                    <small>You may select multiple programs one at a time</small>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <h3>Select the activity you wish to join from list <br />
+                    <small>You may select multiple programs</small>
                 </h3>
-                <select class="program-select" multiple>
-                    <option name="interest[]"  value="Read 2 Succeed Through Hip-Hop and Sports Project">Read 2 Succeed Through Hip-Hop &amp; Sports Project</option>
-                    <option name="interest[]" value="Hip-Hop Against Gun and Gang Violence Project">Hip-Hop Against Gun &amp; Gang Violence Project</option>
-                    <option name="interest[]" value="Hip-Hop Economic Empowerment Program (HEEP)">Hip-Hop Economic Empowerment Program (HEEP)</option>
-                    <option name="interest[]" value="Hip-Hop Against Drugs (HAD)">Hip-Hop Against Drugs (HAD)</option>
-                    <option name="interest[]" value="Time 2 Shine">Time 2 Shine</option>
-                    <option name="interest[]" value="Rap 2 Bridge the Gap">Rap 2 Bridge the Gap</option>
-                    <option name="interest[]" value="Hip-Hop Entertainment Business Program">Hip-Hop Entertainment Business Program</option>
-                    <option name="interest[]" value="Hip-Hop Goes to Hollywood Project">Hip-Hop Goes to Hollywood Project</option>
-                    <option name="interest[]" value="Hip-Hop 4 Better Health Program">Hip-Hop 4 Better Health Program</option>
-                    <option name="interest[]" value="It's Dope To Vote">It's Dope To Vote</option>
-                    <option name="interest[]" value="Sandy Rebuilding AID Project (S-RAP)">Sandy Rebuilding AID Project (S-RAP)</option>
-                    <option name="interest[]" value="Artists, Actors, Athletes, Authors, and Activists Against AIDS (A-TEAM)">Artists, Actors, Athletes, Authors, &amp; Activists Against AIDS (A-TEAM)</option>
-                    <option name="interest[]" value="Community Ambassadors 4 Peace">Community Ambassadors 4 Peace</option>
-                    <option name="interest[]" value="Character Enlightenment Program">Character Enlightenment Program</option>
-                    <option name="interest[]" value="Jobs">Jobs</option>
-                    <option name="interest[]" value="Internships">Internships</option>
-                    <option name="interest[]" value="Entrepreneurship Opportunities">Entrepreneurship Opportunities</option>
-                    <option name="interest[]" value="Daymond John Academy Scholarship">Daymond John Academy Scholarship</option>
-                    <option name="interest[]" value="Shark-A-Nomics 101">Shark-A-Nomics 101</option>
-                    <option name="interest[]" value="Street Team Membership">Street Team Membership</option>
-                    <option name="interest[]" value='Hip-Hop "Power Poll" Registration'>Hip-Hop "Power Poll" Registration</option>
-                    <option name="interest[]" value="Hip-Hop Summit Youth Council General Membership Registration">Hip-Hop Summit Youth Council General Membership Registration</option>
-                    <option name="interest[]" value="Community Legal Assistance Program (CLAP)">Community Legal Assistance Program (CLAP)</option>
-                    <option name="interest[]" value="Hip-Hop &amp; Politics Project">Hip-Hop &amp; Politics Project</option>
-                    <option name="interest[]" value="Hip-Hop 4 Better Housing Program">Hip-Hop 4 Better Housing Program</option>
-                    <option name="interest[]" value="Foreclosure Assistance Network (FAN)">Foreclosure Assistance Network (FAN)</option>
-                    <option name="interest[]" value="Hip-Hop Supports the MDGs">Hip-Hop Supports the MDGs</option>
-                    <option name="interest[]" value="Operation FLEET">Operation FLEET</option>
-                </select>
-                <div class="btn-group inline text-center">
-                    <span class="btn btn-orange select-all">Select All</span>
-                    <span class="btn btn-default deselect-all">Deselect All</span>
-                </div>
+                <input type="checkbox" class="select-all">Select/Deselect All
+                <br />
+                <input type="checkbox" class="program-checkbox" name="interest[]" value="Read 2 Succeed Through Hip-Hop and Sports Project" />Read 2 Succeed Through Hip-Hop &amp; Sports Project<br />
+                <input type="checkbox" class="program-checkbox" name="interest[]" value="Hip-Hop Against Gun and Gang Violence Project" />Hip-Hop Against Gun &amp; Gang Violence Project<br />
+                <input type="checkbox" class="program-checkbox" name="interest[]" value="Hip-Hop Economic Empowerment Program (HEEP)" />Hip-Hop Economic Empowerment Program (HEEP)<br />
+                <input type="checkbox" class="program-checkbox" name="interest[]" value="Hip-Hop Against Drugs (HAD)" />Hip-Hop Against Drugs (HAD)<br />
+                <input type="checkbox" class="program-checkbox" name="interest[]" value="Time 2 Shine" />Time 2 Shine<br />
+                <input type="checkbox" class="program-checkbox" name="interest[]" value="Rap 2 Bridge the Gap" />Rap 2 Bridge the Gap<br />
+                <input type="checkbox" class="program-checkbox" name="interest[]" value="Hip-Hop Entertainment Business Program" />Hip-Hop Entertainment Business Program<br />
+                <input type="checkbox" class="program-checkbox" name="interest[]" value="Hip-Hop Goes to Hollywood Project" />Hip-Hop Goes to Hollywood Project<br />
+                <input type="checkbox" class="program-checkbox" name="interest[]" value="Hip-Hop 4 Better Health Program" />Hip-Hop 4 Better Health Program<br />
+                <input type="checkbox" class="program-checkbox" name="interest[]" value="It's Dope To Vote" />It's Dope To Vote<br />
+                <input type="checkbox" class="program-checkbox" name="interest[]" value="Sandy Rebuilding AID Project (S-RAP)" />Sandy Rebuilding AID Project (S-RAP)<br />
+                <input type="checkbox" class="program-checkbox" name="interest[]" value="Artists, Actors, Athletes, Authors, and Activists Against AIDS (A-TEAM)" />Artists, Actors, Athletes, Authors, &amp; Activists Against AIDS (A-TEAM)<br />
+                <input type="checkbox" class="program-checkbox" name="interest[]" value="Community Ambassadors 4 Peace" />Community Ambassadors 4 Peace<br />
+                <input type="checkbox" class="program-checkbox" name="interest[]" value="Character Enlightenment Program" />Character Enlightenment Program<br />
+                <input type="checkbox" class="program-checkbox" name="interest[]" value="Jobs" />Jobs<br />
+                <input type="checkbox" class="program-checkbox" name="interest[]" value="Internships" />Internships<br />
+                <input type="checkbox" class="program-checkbox" name="interest[]" value="Entrepreneurship Opportunities" />Entrepreneurship Opportunities<br />
+                <input type="checkbox" class="program-checkbox" name="interest[]" value="Daymond John Academy Scholarship" />Daymond John Academy Scholarship<br />
+                <input type="checkbox" class="program-checkbox" name="interest[]" value="Shark-A-Nomics 101" />Shark-A-Nomics 101<br />
+                <input type="checkbox" class="program-checkbox" name="interest[]" value="Street Team Membership" />Street Team Membership<br />
+                <input type="checkbox" class="program-checkbox" name="interest[]" value='Hip-Hop "Power Poll" Registration' />Hip-Hop "Power Poll" Registration<br />
+                <input type="checkbox" class="program-checkbox" name="interest[]" value="Hip-Hop Summit Youth Council General Membership Registration" />Hip-Hop Summit Youth Council General Membership Registration<br />
+                <input type="checkbox" class="program-checkbox" name="interest[]" value="Community Legal Assistance Program (CLAP)" />Community Legal Assistance Program (CLAP)<br />
+                <input type="checkbox" class="program-checkbox" name="interest[]" value="Hip-Hop &amp; Politics Project" />Hip-Hop &amp; Politics Project<br />
+                <input type="checkbox" class="program-checkbox" name="interest[]" value="Hip-Hop 4 Better Housing Program" />Hip-Hop 4 Better Housing Program<br />
+                <input type="checkbox" class="program-checkbox" name="interest[]" value="Foreclosure Assistance Network (FAN)" />Foreclosure Assistance Network (FAN)<br />
+                <input type="checkbox" class="program-checkbox" name="interest[]" value="Hip-Hop Supports the MDGs" />Hip-Hop Supports the MDGs<br />
+                <input type="checkbox" class="program-checkbox" name="interest[]" value="Operation FLEET" />Operation FLEET<br />
+
+                <br />
+                <button id="submit" type="submit" class=" btn btn-large btn-orange">Submit Form</button>
 
                 <input type="hidden" name="_redirect" value="../thankyou.html" />
                 <input type="hidden" name="_thankyou_email" value="email">
@@ -199,7 +177,6 @@
             </div>
         </div>
         <br/>
-        <button id="submit" type="submit" class=" btn btn-large btn-orange">Submit Form</button>
     </form>
 </div>
 
@@ -222,31 +199,14 @@
 </footer>
 
 <!--Javascript-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="../vendor/bootstrap/js/bootstrap.js"></script>
-<script src="../vendor/chosen/chosen.jquery.js"></script>
 <script src="js/register.js"></script>
 <script>
     $(document).ready(function() {
-        $(".program-select").chosen(
-            {
-                no_results_text: "Oops, nothing found for ",
-                disable_search_threshold: 1,
-                placeholder_text_multiple: "Select some programs",
-                width: "60%"
-
-            }
-        ).trigger("chosen:updated");
-
-        $('.select-all').click(function(){
-            $('option').prop('selected', true);
-            $('.program-select').trigger('chosen:updated');
-        });
-
-        $('.deselect-all').click(function(){
-            $('option').prop('selected', false);
-            $('.program-select').trigger('chosen:updated');
-        });
+       $('.select-all').click(function() {
+           $('.program-checkbox').prop('checked', $(this).prop('checked'));
+       });
     });
 </script>
 </body>
