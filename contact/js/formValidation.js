@@ -1,9 +1,8 @@
-$(document).ready(function($){
+jQuery(document).ready(function($){
 
-    'use strict';
 
     // on submit...
-    $("#submit").click(function() {
+    $("#contactForm #submit").click(function() {
 
         //required:
 
@@ -19,7 +18,7 @@ $(document).ready(function($){
         var email = $("#email").val();
         var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         if(email == ""){
-           alert("Please include your Email Address ");
+            alert("Please include your Email Address ");
             $("input#email").focus();
             return false;
         }
@@ -45,6 +44,7 @@ $(document).ready(function($){
             $("textarea#comments").focus();
             return false;
         }
+
         // send mail php
         var sendMailUrl = $("#sendMailUrl").val();
 
@@ -66,14 +66,15 @@ $(document).ready(function($){
             type:"POST",
             url: sendMailUrl,
             data: dataString,
-            success: formSuccess()
+            success: success()
         });
     });
 
 
     // on success...
-    function formSuccess() {
-        alert("Your message has been submitted. Thank you!")
+    function success(){
+        alert("Thanks for you're message! We'll get back to you shortly");
     }
 
+    return false;
 });

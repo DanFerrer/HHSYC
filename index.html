@@ -11,20 +11,7 @@
     <meta name="description" content=""> <!--todo: add meta tags in discription for SEO -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Load Jquery (DO NOT CHANGE ORDER) -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="vendor/jquerymobile/jquery.mobile.custom.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.js"></script>
-    <script>
-        $(document).ready(function() {
-            $(".carousel-inner").swiperight(function() {
-                $(this).parent().carousel('prev');
-            });
-            $(".carousel-inner").swipeleft(function() {
-                $(this).parent().carousel('next');
-            });
-        })();
-    </script>
+
 
     <!--Stylesheets-->
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
@@ -58,32 +45,26 @@
                 <!--<span class="sr-only">Toggle Music</span>-->
                 <!--<i class="fa fa-2x fa-music"></i>-->
             <!--</span>-->
-            <a class="logo" href="index.html">
+            <a class="logo" href="">
                 <img  src="header/img/hhsyclogo.png" title="Hip-Hop Summit Youth Council" alt="Hip-hop Summit Youth Council">
             </a>
         </div>
         <div class="collapse navbar-collapse" id="hhsyc-navbar">
             <ul class="nav navbar-nav">
-                <li class="active-tab"><a href="#">Home</a></li>
-                <li><a href="about/index.html">About</a></li>
-                <li><a href="programs/index.html">Programs</a></li>
-                <li><a href="news/index.html">News</a></li>
-                <li><a href="gallery/index.html">Gallery</a></li>
-                <li><a href="programs/register.html">Register</a></li>
-                <li><a href="donate/index.html">Donate</a></li>
-                <li><a href="contact/index.html">Contact</a></li>
+                <li class="active-tab"><a href="">Home</a></li>
+                <li><a href="about/">About</a></li>
+                <li><a href="programs/">Programs</a></li>
+                <li><a href="news/">News</a></li>
+                <li><a href="gallery/">Gallery</a></li>
+                <li><a href="programs/">Register</a></li>
+                <li><a href="donate/">Donate</a></li>
+                <li><a href="contact/">Contact</a></li>
            </ul>
            <!--<div data-toggle="collapse" data-target="#music-player" class="music-toggle hidden-xs"><i class="fa fa-2x fa-music"></i></div>-->
         </div>
         <div class="collapse" id="music-player">
             <div class="container">
-                <!--<div id="cp_widget_f92245b0-70b4-460e-a52c-e0d5efda801d">...</div><script type="text/javascript">-->
-                <!--var cpo = []; cpo["_object"] ="cp_widget_f92245b0-70b4-460e-a52c-e0d5efda801d"; cpo["_fid"] = "AYBALqbKSb1R";-->
-                <!--var _cpmp = _cpmp || []; _cpmp.push(cpo);-->
-                <!--(function() { var cp = document.createElement("script"); cp.type = "text/javascript";-->
-                    <!--cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";-->
-                    <!--var c = document.getElementsByTagName("script")[0];-->
-                    <!--c.parentNode.insertBefore(cp, c); })(); </script>-->
+
             </div>
         </div>
     </div>
@@ -202,7 +183,7 @@
 <div class="social-twitter container">
     <div class="row">
         <h2 class="social-title">See what everyone's saying!</h2>
-        <div class="col-md-6">
+        <div class="col-md-6 col-sm-6">
             <div class="twitter-block">
                 <a href="https://twitter.com/HHSYC" target="_blank" class="twitter" title="HHSYC Twitter">
                     <i class="fa fa-4x fa-twitter">
@@ -213,8 +194,38 @@
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             </div>
         </div>
-        <div class="col-md-6">
-            <h3 >Upcoming Events:</h3>
+        <div class="col-md-6 col-sm-6">
+            <h3 class="text-center" >Upcoming Events:</h3>
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <i class="calender-icon fa fa-4x fa-calendar"></i>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <h3>United Nations introduce Operation FLEET</h3>
+                    <small>Jan 30, 2014</small>
+                    <hr />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <i class="calender-icon fa fa-4x fa-calendar"></i>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <h3>Gun and Gang Violence Album Release</h3>
+                    <small>March 24, 2014</small>
+                    <hr />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <i class="calender-icon fa fa-4x fa-calendar"></i>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <h3>United Nations Hip Hop Youth Summit</h3>
+                    <small>Jun 22, 2014</small>
+                    <hr />
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -236,6 +247,21 @@
         <p class="pull-right">&copy; HHSYC 2014</p>
     </div>
 </footer>
+
+<!-- Load Jquery (DO NOT CHANGE ORDER) -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="vendor/jquerymobile/jquery.mobile.custom.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".carousel-inner").swiperight(function() {
+            $(this).parent().carousel('prev');
+        });
+        $(".carousel-inner").swipeleft(function() {
+            $(this).parent().carousel('next');
+        });
+    })();
+</script>
 
 </body>
 </html>
