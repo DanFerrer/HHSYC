@@ -8,34 +8,30 @@ $(document).ready(function($){
         //required:
 
         //name
-        var name = $("input#name").val();
+        var name = $("#name").val();
         if(name == ""){
             alert("Please include your Name");
             $("input#name").focus();
-            return false;
         }
 
         // email
-        var email = $("input#email").val();
-        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        var email = $("#email").val();
+        var filter = /^([a-zA-Z0-9_\.\-])+@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         if(email == ""){
            alert("Please include your Email Address ");
             $("input#email").focus();
-            return false;
         }
 
         if(!filter.test(email)) {
             alert("Please enter a valid email. \n Only the following characters are allowed: \n /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/");
             $("input#email").focus();
-            return false;
         }
 
         // web
-        var web = $("input#web").val();
+        var web = $("#web").val();
         if(web == ""){
             alert("Web required");
             $("input#web").focus();
-            return false;
         }
 
         // comments
@@ -43,7 +39,6 @@ $(document).ready(function($){
         if (comments == "") {
             alert("Please include a Comment");
             $("textarea#comments").focus();
-            return false;
         }
         // send mail php
         var sendMailUrl = $("#sendMailUrl").val();
@@ -69,7 +64,6 @@ $(document).ready(function($){
             success: formSuccess()
         });
     });
-
 
     // on success...
     function formSuccess() {
