@@ -1,0 +1,26 @@
+a {
+    color: #333;
+}
+
+a:hover, a:focus {
+    color: #ff6600;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+article {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+div.excerpt p {
+    line-height: 2;
+}
+
+.entry-date {
+    font-weight: bold;
+    color: #ff6600;
+    margin-bottom: 15px;
+}
