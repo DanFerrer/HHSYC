@@ -1,0 +1,19 @@
+.flyer {
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.programs {
+    line-height: 2;
+    font-size: 20px;
+}
+
+div.programs {
+    margin-bottom: 15px;
+}
+
+form {
+    margin-bottom: 15px;
+}

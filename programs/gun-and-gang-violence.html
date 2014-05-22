@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>HHSYC | Programs</title>
+    <meta name="author" content="Operation FLEET">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../vendor/font-awesome-4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="../header/css/navbar.css">
+    <link rel="stylesheet" href="../footer/css/footer.css">
+    <link rel="stylesheet" href="css/violence.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<nav id="header" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#hhsyc-navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<span class="music-toggle visible-xs" data-toggle="collapse" data-target="#music-player">-->
+            <!--<span class="sr-only">Toggle Music</span>-->
+            <!--<i class="fa fa-2x fa-music"></i>-->
+            <!--</span>-->
+            <a class="logo" href="../">
+                <img  src="../header/img/hhsyclogo.png" title="Hip-Hop Summit Youth Council" alt="Hip-hop Summit Youth Council">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="hhsyc-navbar">
+            <ul class="nav navbar-nav">
+                <li><a href="../">Home</a></li>
+                <li><a href="../about/">About</a></li>
+                <li class="active-tab"><a href="../programs">Programs</a></li>
+                <li><a href="../news/">News</a></li>
+                <li><a href="../gallery/">Gallery</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="../donate">Donate</a></li>
+                <li><a href="../contact">Contact</a></li>
+            </ul>
+            <!--<div data-toggle="collapse" data-target="#music-player" class="music-toggle hidden-xs"><i class="fa fa-2x fa-music"></i></div>-->
+        </div>
+        <!--<div class="collapse" id="music-player">-->
+        <!--</div>-->
+    </div>
+</nav>
+
+<div class="programs container">
+    <h1 class="page-header">Hip-Hop Against Gun and Gang Violence</h1>
+    <img class="flyer img-responsive" src="img/gun-gang-violence.PNG" alt="Hip-Hop Against Gun and Gang Violence"/>
+    <hr>
+    <p>Poverty and illiteracy are the root causes of Gun & Gang Violence. Statistics show that 1 in 5 children under 18
+        live in poverty; 1.2 million drop out of school annually and take low paying jobs, apply for welfare, join a gang,
+        sell drugs and/or live a life surrounded by crime, gun and gang violence. The Hip-Hop Against Gun & Gang Violence Week Campaign and 7 E’s 4 Power Tour are proactive approaches that use
+        the influence of the Hip-Hop Culture to end Gun & Gang violence.
+    </p>
+    <br />
+    <form id="haggvForm" role="form" action="php/send-mail.php" method="POST">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="form-group ">
+                    <label>Name</label>
+                    <input type="text" name="name" class="form-control" id="name">
+                </div>
+                <div class="form-group ">
+                    <label>Address</label>
+                    <input type="text" name="address" class="form-control" id="address">
+                </div>
+                <div class="form-group ">
+                    <label>City</label>
+                    <input type="text" name="city" class="form-control" id="city">
+                </div>
+                <div class="form-group ">
+                    <label>State</label>
+                    <input type="text" name="state" class="form-control" id="state">
+                </div>
+                <div class="form-group ">
+                    <label>Zip</label>
+                    <input type="text" name="zip" class="form-control" id="zip">
+                </div>
+                <div class="form-group ">
+                    <label>Email</label>
+                    <input type="email" name="email" class="form-control" id="email">
+                </div>
+                <div class="form-group ">
+                    <label>School/Job</label>
+                    <input type="text" name="occupation" class="form-control" id="occupation">
+                </div>
+                <select class="form-control col-md-12" name="gender" id="gender">
+                    <option selected>Male</option>
+                    <option>Female</option>
+                </select>
+                <div class="form-group ">
+                    <label>Age</label>
+                    <input type="text" name="age" class="form-control" id="age">
+                </div>
+                <div class="form-group ">
+                    <label>Why Do you Want to Be Part of This Project?</label>
+                    <textarea class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-orange col-lg-6 col-lg-offset-3">Submit Form</button>
+            </div>
+        </div>
+
+        <input type="hidden" name="recipient" value="hiphopbooks@yahoo.com">
+        <input name="subject" type="hidden" id="subject" value="Hip-Hop Against Gun & Gang Violence Week - Individual Registration">
+        <input name="redirect" type="hidden" id="redirect" value="hhav_thankyou.html">
+        <input type="hidden" name="sort" value="name,address,city,state,zip,phone,email,occupation,gender,age,reasonforjoining">
+        <input name="required" type="hidden" id="required" value="phone,name,email">
+    </form>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="col-md-4 col-sm-4 col-xs-4">
+                <a href="pdfs/HAGGVRevised2014.pdf" class="btn btn-orange" target="_blank">Learn More!</a>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4">
+                <a href="../haggvpetition/" class="btn btn-orange" target="_blank">Sign Petition</a>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4">
+                <a href="pdfs/HAGGV7EsTOUR20143.pdf" class="btn btn-orange" target="_blank">Tour Outline</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer id="footer">
+    <div class="container">
+        <h4 class="footer-brand pull-left">Hip-Hop Summit Youth Council</h4>
+        <span class="social-icons pull-right">
+            <a href="https://www.youtube.com/hhsyc" target="_blank" class="youtube" title="HHSYC Youtube"><i class=" fa fa-2x fa-youtube"></i></a>
+            <a href="https://twitter.com/HHSYC" target="_blank" class="twitter" title="HHSYC Twitter"><i class="fa fa-2x fa-twitter"></i></a>
+            <a href="https://www.facebook.com/hhsyc?fref=ts" target="blank" class="facebook"><i class="fa fa-2x fa-facebook"></i></a>
+            <a class="instagram"><i class="fa fa-2x fa-instagram"></i></a>
+        </span>
+        <div class="clearfix"></div>
+        <hr>
+        <div class="footer-tagline">
+            <h3 class="text-center">Created by<a href="http:\\www.kandppartners.com" target="_blank"><em>Operation Fleet</em></a></h3>
+        </div>
+        <p class="pull-right">&copy; HHSYC 2014</p>
+    </div>
+</footer>
+
+<!--Javascript-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="../vendor/jquerymobile/jquery.mobile.custom.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.js"></script>
+
+</body>
+</html>
